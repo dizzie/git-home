@@ -1,0 +1,123 @@
+!! I use chromium, fix it to match your browser (firefox, iceweasel, whatever)
+!! I use Inconsolata/16 font, don't like that font? Replace it :)
+!!
+!! Some stuff in this config is YEARS old, so yeah if you find it old, don't use it :)
+!!
+!! Terminal suggestion : sudo apt-get install rxvt-unicode-256color
+!!      For Arch users : pacman -S rxvt-unicode-256color
+!!
+!! September 28, dizzie (dizzie @ irc.freenode.org/#VSIDO )
+
+!! FONTS !!
+
+!!URxvt*.font: xft:DejaVu Sans Mono:pixelsize=14:antialias=false:hinting=true:size=12
+URxvt*.font: xft:Inconsolata:style=Medium:hinting=true:pixelsize=18
+
+!! CURSOR !!
+
+Xcursor.theme:            Vanilla-DMZ-AA
+
+!! TRANSPARENCY !!
+
+
+URxvt.shading:           80
+URxvt*inheritPixmap: true
+URxvt*tintColor: white
+URxvt*shading: 80
+URxvt*transparent: true 
+
+! !! Perl Plugins !!
+
+URxvt*perl-lib: /usr/lib/urxvt/perl
+URxvt.perl-ext-common: default,matcher,url-select,keyboard-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+urxvt*urlLauncher: /usr/bin/chromium
+URxvt.url-select.launcher:  /usr/bin/chromium
+URxvt.underlineURLs: true
+URvxt.urlButton: 1
+urxvt*matcher.button: 1
+URxvt*matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt*matcher.rend.0: fg7
+
+!! BARS AND BORDERS !!
+
+URxvt*.scrollBar:	        false
+URxvt*.internalBorder:    5
+URxvt*.cursorBlink:       true
+URxvt*.termName:          rxvt-256color
+URxvt*.saveLines:         1500
+URxvt*.urgentOnBell:      true
+
+!! COLORS !!
+
+!urxvt*background:   #000000
+!urxvt*depth:        32
+!urxvt*background:   rgba:0000/0000/0000/eeee
+!urxvt*background:   #090909
+!urxvt*foreground:   #DDDDDD
+
+*cursorColor:       #B15C00
+     
+!! black dark/light
+!*color0: #222222
+!*color8: #444444
+     
+!! red dark/light
+!*color1: #B10000
+!*color9: #CC0000
+     
+!! green dark/light
+!*color2: #6CB100
+!*color10: #7CCC00
+     
+!! yellow dark/light
+!*color3: #B15C00
+!*color11: #CC6A00
+     
+!! blue dark/light
+!*color4: #005577
+!*color12: #0075A3
+     
+!! magenta dark/light
+!*color5: #9F5F9F
+!*color13: #EEAEEE
+     
+!! cyan dark/light
+!*color6: #007177
+!*color14: #009199
+     
+!! white dark/light
+!*color7: #bbbbbb
+!*color15: #bbbbbb 
+
+! From Ferus :
+
+*foreground:     rgb:dd/dd/dd
+*background:     rgb:22/22/22
+!black
+*color0:         rgb:19/19/19
+*color8:         rgb:25/25/25
+!!red
+*color1:         rgb:80/32/32
+*color9:         rgb:98/2b/2b
+!!green
+*color2:         rgb:5b/76/2f
+*color10:        rgb:89/b8/3f
+!!brown/yellow
+*color3:         rgb:aa/99/43
+*color11:        rgb:ef/ef/60
+!!blue
+*color4:         rgb:32/4c/80
+*color12:        rgb:2b/4f/98
+!!magenta
+*color5:         rgb:80/32/32
+*color13:        rgb:98/2b/2b
+!!cyan
+*color6:         rgb:92/b1/9e
+*color14:        rgb:a1/cd/cd
+!!white
+*color7:         rgb:ee/ee/ee
+*color15:        rgb:cc/cc/cc
+

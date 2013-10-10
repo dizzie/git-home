@@ -1,0 +1,62 @@
+# Ignore everything
+*
+
+# git
+!.gitconfig
+!.gitignore
+
+# i3
+!.i3/
+!.i3/config
+
+# mutt
+!.mutt/colors
+!.mutt/colors2
+
+# mpd/ncmpcpp/mplayer
+!.mpd/
+!.mpd/mpd.conf
+!.ncmpcpp/
+!.ncmpcpp/config
+!.mplayer/
+!.mplayer/config
+
+# bash
+!.bash_profile
+!.bashrc
+
+# X*/urxvt
+!.Xdefaults
+!.conkyrc
+!.conkyrcleft
+!.conkyrcright
+!.rtorrent.rc
+!.vimrc
+!.muttrc
+!.bashrc
+
+# binscripts
+
+!bin/
+!bin/conky_i3bar.sh
+!bin/conky_i3bar_left.sh
+!bin/conky_i3bar_right.sh
+!bin/convert.sh
+!bin/screenfetch-dev
+!bin/statusinfo.py
+
+# weechat shit
+!.weechat/
+!.weechat/perl/
+!.weechat/perl/autoload
+!.weechat/perl/autoload/beep.pl
+!.weechat/perl/autoload/highmon.pl
+!.weechat/perl/autoload/moc.pl
+!.weechat/perl/autoload/sysinfo.pl
+!.weechat/python/
+!.weechat/python/autoload/
+!.weechat/python/autoload/chanop.py
+!.weechat/python/autoload/mpc.py
+!.weechat/python/autoload/shell.py
+!.weechat/weechat.conf
+

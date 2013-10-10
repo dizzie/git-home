@@ -1,0 +1,31 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+update_interval 1.0
+total_run_times 0
+short_units yes
+cpu_avg_samples 4
+use_spacer none
+
+TEXT
+# JSON for i3bar
+ 
+[
+
+    { "full_text" : " System : ${kernel} " , "color" : "\#C6C633" },
+
+    { "full_text" : " Root ${fs_used /} / ${fs_free /} (${fs_used_perc /}%) " , "color" : "\#C6C633" },
+
+    { "full_text" : " Home ${fs_used /home} / ${fs_free /home} (${fs_used_perc /home}%) " , "color" : "\#C6C633" },
+
+    { "full_text" : " NAS ${fs_used /mnt/share} / ${fs_free /mnt/share} (${fs_used_perc /mnt/share}%) " , "color" : "\#C6C633" },        
+    
+#    { "full_text" : " Data ${fs_used /home/dizzie/data} / ${fs_free /home/dizzie/data} (${fs_used_perc /home/dizzie/data}%) " , "color" : "\#C6C633" },    
+
+    { "full_text" : " Uptime ${uptime} " , "color" : "\#C6C633" },
+
+    { "full_text" : " ${time %a %e %b, %k:%M:%S} " , "color" : "\#C6C633" } 
+
+],

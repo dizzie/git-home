@@ -1,0 +1,18 @@
+[user]
+    email = michael@fredslev.dk
+    name = dizzie
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+[core]
+    editor = vim
+    pager = less
+[alias]
+    crm = rm --cached
+[push]
+    default = current
+

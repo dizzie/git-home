@@ -1,0 +1,22 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+update_interval 1.0
+total_run_times 0
+short_units yes
+cpu_avg_samples 4
+use_spacer none
+
+TEXT
+# JSON for i3bar
+ 
+[
+    { "full_text" : " MPD Playing : ${mpd_smart} (${mpd_elapsed}/${mpd_length}) " , "color" : "\#C6C633" },
+    { "full_text" : " Fans : ${execi 10 cat "/sys/class/hwmon/hwmon1/device/fan1_input"}" , "color" : ${if_match ${execi 10 cat "/sys/class/hwmon/hwmon1/device/fan1_input"}>600}"\#bf3f34"${else}"\#C6C633"${endif} },
+    { "full_text" : " ${execi 10 cat "/sys/class/hwmon/hwmon1/device/fan2_input"}" , "color" : ${if_match ${execi 10 cat "/sys/class/hwmon/hwmon1/device/fan2_input"}>2100}"\#bf3f34"${else}"\#C6C633"${endif} },
+    { "full_text" : " ${execi 10 cat "/sys/class/hwmon/hwmon1/device/fan3_input"}" , "color" : ${if_match ${execi 10 cat "/sys/class/hwmon/hwmon1/device/fan3_input"}>700}"\#bf3f34"${else}"\#C6C633"${endif} },
+    { "full_text" : " Temp : CPU: ${execi 10 sensors | grep "CPUTIN" | cut -b18-19} GPU: ${execi 10 sensors | grep "PECI" | cut -b18-19} SYS: ${execi 10 sensors | grep "AUXTIN" | cut -b18-19} " , "color" : "\#C6C633" },
+    { "full_text" : " ${time %a %e %b, %k:%M:%S} " , "color" : "\#C6C633" } 
+],
