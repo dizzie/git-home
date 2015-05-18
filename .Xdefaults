@@ -1,13 +1,3 @@
-!! I use chromium, fix it to match your browser (firefox, iceweasel, whatever)
-!! I use Inconsolata/16 font, don't like that font? Replace it :)
-!!
-!! Some stuff in this config is YEARS old, so yeah if you find it old, don't use it :)
-!!
-!! Terminal suggestion : sudo apt-get install rxvt-unicode-256color
-!!      For Arch users : pacman -S rxvt-unicode-256color
-!!
-!! September 28, dizzie (dizzie @ irc.freenode.org/#VSIDO )
-
 !! FONTS !!
 
 !!URxvt*.font: xft:DejaVu Sans Mono:pixelsize=14:antialias=false:hinting=true:size=12
@@ -60,40 +50,6 @@ URxvt*.urgentOnBell:      true
 
 *cursorColor:       #B15C00
      
-!! black dark/light
-!*color0: #222222
-!*color8: #444444
-     
-!! red dark/light
-!*color1: #B10000
-!*color9: #CC0000
-     
-!! green dark/light
-!*color2: #6CB100
-!*color10: #7CCC00
-     
-!! yellow dark/light
-!*color3: #B15C00
-!*color11: #CC6A00
-     
-!! blue dark/light
-!*color4: #005577
-!*color12: #0075A3
-     
-!! magenta dark/light
-!*color5: #9F5F9F
-!*color13: #EEAEEE
-     
-!! cyan dark/light
-!*color6: #007177
-!*color14: #009199
-     
-!! white dark/light
-!*color7: #bbbbbb
-!*color15: #bbbbbb 
-
-! From Ferus :
-
 *foreground:     rgb:dd/dd/dd
 *background:     rgb:22/22/22
 !black
